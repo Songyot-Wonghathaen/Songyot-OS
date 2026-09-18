@@ -102,6 +102,7 @@ sudo ./build-iso.sh
 | [QUICKSTART.md](docs/QUICKSTART.md) | เริ่มต้นใน 5 นาที / Quick start guide |
 | [INSTALL.md](docs/INSTALL.md) | วิธีติดตั้งฉบับสมบูรณ์ / Installation guide |
 | [BUILD.md](docs/BUILD.md) | วิธี build ISO / How to build |
+| [SUPPORTED_VERSIONS.md](docs/SUPPORTED_VERSIONS.md) | Ubuntu versions ที่รองรับ / Supported versions |
 | [FAQ.md](docs/FAQ.md) | คำถามที่พบบ่อย / FAQ |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | วิธีมีส่วนร่วม / Contributing guide |
 | [ROADMAP.md](docs/ROADMAP.md) | แผนการพัฒนา / Development roadmap |

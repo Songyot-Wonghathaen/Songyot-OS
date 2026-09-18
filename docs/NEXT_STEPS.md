@@ -31,9 +31,11 @@
 ### 2. ทดสอบ Build Script
 
 ```bash
-# ติดตั้ง Ubuntu 22.04 (VM หรือเครื่องจริง)
+# ติดตั้ง Ubuntu 22.04 หรือ 24.04 LTS (VM หรือเครื่องจริง)
+# ดู docs/SUPPORTED_VERSIONS.md สำหรับ Ubuntu versions ที่รองรับ
+
 # Clone repository
-git clone https://github.com/YOUR-USERNAME/Songyot-OS.git
+git clone https://github.com/Songyot-Wonghathaen/Songyot-OS.git
 cd Songyot-OS
 
 # ทดสอบ build environment
