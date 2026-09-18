@@ -1,0 +1,4 @@
+# This directory will contain built ISO files
+# Files in this directory:
+# - songyot-os-*.iso (ISO image files)
+# - songyot-os-*.iso.sha256 (checksum files)

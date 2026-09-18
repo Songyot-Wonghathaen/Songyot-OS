@@ -1,0 +1,94 @@
+# .gitignore for Songyot OS
+
+# Build artifacts
+build/iso-build/
+build/*.iso
+build/*.img
+dist/*.iso
+dist/*.iso.sha256
+*.squashfs
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled files
+*.o
+*.ko
+*.obj
+*.elf
+*.class
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+*.dmg
+
+# Compressed files (except in releases)
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Backup files
+*.backup
+backup/
+
+# System logs
+/var/log/*
+*.log
+
+# Credentials and secrets
+*.key
+*.pem
+*.crt
+*.cert
+secrets/
+.env
+.env.local
+
+# Test results
+test-results/
+coverage/
+*.test
+
+# Local configuration
+config/local/
+*.local
+settings.local.json

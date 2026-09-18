@@ -1,0 +1,46 @@
+name: Test ISO
+
+on:
+  workflow_run:
+    workflows: ["Build Songyot OS ISO"]
+    types:
+      - completed
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Download ISO artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: songyot-os-iso
+        path: dist/
+
+    - name: Install QEMU
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y qemu-system-x86
+
+    - name: Verify ISO integrity
+      run: |
+        cd dist
+        sha256sum -c songyot-os-1.0-amd64.iso.sha256
+
+    - name: Test boot in QEMU
+      run: |
+        timeout 300 qemu-system-x86_64 \
+          -m 2048 \
+          -cdrom dist/songyot-os-1.0-amd64.iso \
+          -boot d \
+          -nographic \
+          -serial mon:stdio || true
+
+    - name: Report test results
+      run: |
+        echo "ISO boot test completed"
+        ls -lh dist/

@@ -1,0 +1,47 @@
+{
+  "name": "Songyot OS",
+  "version": "1.0.0",
+  "description": "A custom Linux distribution based on Ubuntu, designed for Thai users",
+  "base": {
+    "distribution": "Ubuntu",
+    "version": "22.04 LTS",
+    "codename": "jammy"
+  },
+  "desktop": {
+    "environment": "XFCE",
+    "display_manager": "LightDM"
+  },
+  "features": {
+    "language_support": ["th_TH", "en_US"],
+    "default_locale": "th_TH.UTF-8",
+    "thai_fonts": true,
+    "thai_input": "ibus-libthai"
+  },
+  "preinstalled_software": [
+    "Firefox",
+    "LibreOffice",
+    "GIMP",
+    "VLC Media Player",
+    "Git",
+    "Vim",
+    "Network Manager"
+  ],
+  "build": {
+    "architecture": "amd64",
+    "kernel": "linux-generic",
+    "bootloader": "GRUB2"
+  },
+  "system_requirements": {
+    "processor": "2 GHz dual-core or better",
+    "ram_minimum": "4 GB",
+    "ram_recommended": "8 GB",
+    "storage": "25 GB",
+    "display": "1024x768"
+  },
+  "maintainer": {
+    "name": "Songyot OS Team",
+    "email": "support@songyot-os.local"
+  },
+  "license": "GPL-3.0",
+  "repository": "https://github.com/songyot-os/songyot-os"
+}

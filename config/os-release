@@ -1,0 +1,13 @@
+NAME="Songyot OS"
+VERSION="1.0 (Stable)"
+ID=songyot
+ID_LIKE=ubuntu
+PRETTY_NAME="Songyot OS 1.0"
+VERSION_ID="1.0"
+HOME_URL="https://songyot-os.local"
+SUPPORT_URL="https://songyot-os.local/support"
+BUG_REPORT_URL="https://songyot-os.local/bugs"
+PRIVACY_POLICY_URL="https://songyot-os.local/privacy"
+VERSION_CODENAME=songyot
+UBUNTU_CODENAME=jammy
+LOGO=songyot-logo
