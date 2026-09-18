@@ -10,8 +10,9 @@ OS_NAME="Songyot OS"
 OS_VERSION="1.0"
 OS_CODENAME="songyot"
 BASE_DISTRO="ubuntu"
-BASE_VERSION="25.04"  # Ubuntu 25.04 (Plucky Puffin)
-# Supported versions: 22.04 (Jammy), 24.04 (Noble), 25.04 (Plucky), 20.04 (Focal)
+BASE_VERSION="26.04"  # Ubuntu 26.04 (actual version)
+# Supported versions: 26.04, 24.04 (Noble), 22.04 (Jammy), 20.04 (Focal)
+# Note: Use actual Ubuntu version from your system
 ARCH="amd64"
 
 # Colors for output
